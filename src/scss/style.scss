@@ -35,13 +35,39 @@ body{
         font-weight: 400;
     }
 }
-/*.intro h1, 
-.intro h2{
-    padding: 40px;
-}*/
 
 strong{
     color: #54be90 ;
     text-decoration: underline;
     text-decoration-color: white;
     }
+
+.product{
+    display: flex;
+    flex-direction: column;
+
+&__top{
+    padding: 50px 130px;
+    margin: -20px;
+    text-align: center;
+}
+
+&__cards{
+    display: flex;
+    flex-direction: row;
+    background-color: #232323;
+    color: white;
+    padding: 0px 60px;
+}}
+
+.h3{
+    color: #54be90;
+    font-weight: bold;
+}
+.card1, 
+.card2, 
+.card3, 
+.card4{
+    padding: 20px;
+    text-align: center;
+}
