@@ -92,3 +92,23 @@ strong{
     margin: 20px;
     text-align: center;
 }
+
+.skills{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__h2{
+        color: #54be90;
+        font-size: 25px;
+        
+    }
+    
+
+}
+
+.beam{
+    display: flex;
+    flex-direction: row;
+}
