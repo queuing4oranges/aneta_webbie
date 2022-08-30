@@ -169,16 +169,66 @@ width: 48%;
     width: 40%;
 }
 
+.portfolio{
+    background-color: $aneta-green;
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+}
 
-// .green{
-//     background-color: $aneta-green;
+.portfolio h2{ //selects h2 only in portfolio
+    color: $aneta-white;
+    padding: 50px;
+}
 
-//     &__php{
-//         width: 48%S;
-//     }
+.port__pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 3px red solid;
+}
+
+.port__pic{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid $aneta-green;
+}
+
+img{
+    width: 50%;
+    border: 3px solide $aneta-white;
+}
+
+.port__pic-bottom p{
+    text-align: center;
+    border-top: 3px solid $aneta-white;
+}
+
+
+
+
+
+// .port__pictures{
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     align-content: space-between;
 // }
 
-// .grey{
-//     background-color: $aneta-lightgrey;
-//     color: $aneta-textgrey;
+// .port__pic{
+//     display: flex;
+//     flex-direction: column;
+//     width: 33%;
+//     max-width: fit-content;
+//     margin: 20px;
 // }
+
+
+// img{
+//     width: 100%;
+// }
+
