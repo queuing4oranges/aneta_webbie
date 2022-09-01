@@ -1,19 +1,9 @@
+$base-color: #c6538c;
+$aneta-darkgrey: #232323;
 $aneta-green: #54be90;
-$aneta-white: #ffffff;
 $aneta-lightgrey: #ebebeb;
 $aneta-textgrey: #444444;
-$aneta-darkgrey: #232323;
-
-$base-color: #c6538c;
-
-
-
-
-
-html {
-    box-sizing: border-box;
-    font-family: "Alegreya Sans";
-}
+$aneta-white: #ffffff;
 
 *,
 *:before,
@@ -21,25 +11,39 @@ html {
     box-sizing: inherit;
 }
 
-body{
-    
+
+html {
+    box-sizing: border-box;
+    font-family: "Alegreya Sans";
+    margin: auto;   
+    width: 100%;
 }
 
-.intro{
-    display: flex;
-    flex-direction: column;
-    width: max;
+body {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+
+/*INTRO*/
+.intro {
     background-image: url(../img/intro_image.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 500px;
+    background-size: cover;
     color: $aneta-white;
-    text-align: center;  
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin: 0;
     padding: 150px;
-
+    text-align: center;
+    width: 100%;
     &__h1{
-        font-size:xx-large;
+        font-size:70px;
         font-weight: 400;
+        margin-bottom: 10px;
     }
 
     &__h2{
@@ -48,187 +52,479 @@ body{
     }
 }
 
-strong{
+.subtitle {
+    font-size: 55px;
+    font-weight: 400; 
+    margin-top: 10px;  
+}
+
+.green {
     color: $aneta-green ;
     text-decoration: underline;
     text-decoration-color: white;
-    }
+}
 
+/*PRODUCT*/
 .product{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 20px 0;
 
-&__top{
-    padding: 35px 200px 30px;
-    margin: -50px;
-    text-align: center;
+    &__top{
+        padding: 35px 50px 30px;
+        text-align: center;
+    }
+
+    &__top-text {
+        align-self: center;
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    &__cards{
+        background-color: $aneta-darkgrey;
+        color: $aneta-white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;     
+        padding: 60px 160px;
+    }
 }
 
-&__cards{
+.circles {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: $aneta-darkgrey;
-    color: $aneta-white;
-    padding: 60px 160px;
-}}
-
-.circles{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0px 160px;
-    /*padding: 0px 20px;*/
+    margin: 0;
+    padding: 0px 160px;    
+    width: 100%;  
 }
 
 .one-circle {
-    position: relative;
     background-color: $aneta-white;
-    width: 130px;
-    height: 130px;
     border-radius: 50%;
+    height: 130px;
     margin: 0px 0px -45px 0px;
+    position: relative;
+    width: 130px;   
 }
-
 
 .h3{
     color: $aneta-green;
     font-weight: bold;
 }
-.card1, 
-.card2, 
-.card3, 
-.card4{
-    width: 130px;
-    // padding: 20px;
-    // margin: 20px;
+
+.card {
+    width: 162px;
     text-align: center;
 }
 
-.skills{
+/*SKILLS*/
+.skills {
     display: flex;
     flex-direction: column;
+    margin: 50px auto;
     text-align: center;
-    width: 60%;
-    margin: auto;
-
+    width: 70%;
 }
 
-h2{
+h2 {
     color: $aneta-green;
-    font-size: 25px;
+    font-size: 40px;
 }
 
-.beam{
+.title__port {
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.beam {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    height: 40px;
     justify-content: flex-start;
     padding: 4px;
-
+    width: 100%;
 }
+
 .black {
-    width: 20%;
+    align-items: center;
     background-color: $aneta-textgrey ;
     color: $aneta-white;
+    display: flex;
+    justify-content: center;
     padding: 2px;
+    width: 20%;    
+    & p {
+        text-align: center;
+    }
+}
+.grey__16, 
+.grey__24, 
+.grey__32, 
+.grey__40 {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
 
-.green__64{
+.green__64 {
     background-color: $aneta-green;
     width: 64%;
 }
-.grey__16{
+.grey__16 {
     background-color: $aneta-lightgrey;
     width: 16%;
 }
-.green__56{
+.green__56 {
     background-color: $aneta-green;
     width: 56%;
 }
-.grey__24{
+.grey__24 {
     background-color: $aneta-lightgrey;
     width: 24%;
 }
-.green__48{
-background-color: $aneta-green;
-width: 48%;
+.green__48 {
+    background-color: $aneta-green;
+    width: 48%;
 }
-.grey__32{
+.grey__32 {
     background-color: $aneta-lightgrey;
     width: 32%;
 }
-.green__40{
+.green__40 {
     background-color: $aneta-green;
     width: 40%;
 }
-.grey__40{
+.grey__40 {
     background-color: $aneta-lightgrey;
     width: 40%;
 }
 
-.portfolio{
+/*MY PORTFOLIO*/
+.portfolio {
     background-color: $aneta-green;
+    margin-top: 130px;
+    padding-bottom: 130px;
     text-align: center;
-    width: 90vw;
-    margin: auto;
+    width: 100%; 
 }
 
-.portfolio h2{ //selects h2 only in portfolio
+.portfolio h2{ 
     color: $aneta-white;
-    padding: 50px;
+    margin: 0 auto;
+    padding: 70px;     
 }
 
-.port__pictures{
+.port__pictures {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    border: 3px red solid;
+    margin: auto;    
+    width: 90%;
 }
 
-.port__pic{
+.port__pic {
+    background-color: $aneta-lightgrey;
+    border: 7px solid $aneta-white;
     display: flex;
     flex-direction: column;
-    width: 33%;
+    margin: 5px;
+    padding: 5px auto 0px;
+    position: relative;
     text-align: center;
-    padding: 5px;
-    border: 3px solid $aneta-green;
+    width: 30%;        
 }
 
-img{
+img {
     width: 50%;
-    border: 3px solide $aneta-white;
 }
 
-.port__pic-bottom p{
-    text-align: center;
+.port__pic-bottom {
     border-top: 3px solid $aneta-white;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    padding-top: 20px;   
+}
+
+.black__border {
+    border: 7px black solid;
+}
+
+.port__pic-bottom p {
+    display: grid;
+    height: 200px;
+    margin: auto;
+    width: 260px;
+}
+
+.tech {
+    bottom: -3px;
+    font-size: 18px;
+    left: 15px;
+    margin-bottom: 15px;
+    position: absolute;  
+}
+
+.explore__btn {
+    background-color: $aneta-green;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0.5px 2px 2px 1px $aneta-darkgrey;
+    color: white;
+    height: 25px;
+    margin: 15px auto;
+    padding: 3px;
+    width: 80%; 
+}
+
+/*ABOUT ME*/
+.about {
+    background-color: $aneta-lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px; 
+}
+
+.title__about {
+    color: $aneta-darkgrey;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    width: 90%; 
+}
+
+.image__cont {
+    align-items: center;
+    display: flex;
+    justify-content: center;   
+}
+
+.about__image {
+    border-radius: 50%;
+    margin: 0px 70px;
+    width: 300px; 
+}
+
+.text__cont {
+    margin-left: 50px;
+    width: 70%;
+}
+
+.text__cont p {
+    width: 80%;
+}
+
+.underline {
+    text-decoration: underline 5px $aneta-green;
+}
+
+.contact__btn {
+    background-color: $aneta-green;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0.5px 2px 2px 1px $aneta-darkgrey; 
+    color: white;
+    height: 25px;
+    margin: 15px auto;
+    padding: 3px;
+    width: 25%;
+}
+
+/*FIND ME HERE*/
+.social {
+    align-items: center;
+    background-color: $aneta-darkgrey;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.social__subtitle {
+    color: $aneta-white;
+    font-size: 1.5em;
+    margin-top: 0;
+    padding-top: 50px; 
+}
+
+.social__logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    background-color: white;
+    margin: 10px 50px auto;
+    width: 100px; 
+}
+
+.github,
+.linkedin {
+    border-radius: 50%;
+}
+
+.insta {
+    border-radius: 25px;
+}
+
+/*CONTACT ME*/
+.contact {
+    align-items: center;
+    background-color: $aneta-green;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 70px;
+    width: 100%;
+    &__title {
+        color: $aneta-white;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+.form__cont {
+    width: 800px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__left_right {
+    display: flex;
+}
+
+.form__right,
+.form__left {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.form__left {
+    padding-right: 10px;
+}
+
+.form__right {
+    padding-left: 10px;
+}
+
+.form__left label,
+.form__right label {
+    border-bottom: 1px solid white;
+    float: left;
+    margin: 20px 0 40px;
+    padding-right: 10px;
+    width: 100%;    
+}
+
+label {
+    color: white;
+    width: 150px;
+}
+
+input {
+    background: $aneta-green;
+    border: none;
+    outline: none;
+    width: 150px;
+}
+
+::placeholder {
+    color: white;
+    font-family: "Alegreya Sans";
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+textarea {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    resize: none;
+    width: 800px;    
+}
+
+.textarea label {
+    font-family: "Alegreya Sans";
+    font-size: 20px;
+    font-weight: 100px;
+}
+
+.form__btn {
+    background-color: $aneta-darkgrey;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100px;
+    margin-top: 20px;     
+    width: 800px;
+}
+
+/*NICE TO MEET YOU*/
+
+.footer__cont {
+    background-color: $aneta-lightgrey;
+    display: flex;
+    flex-direction: column;
+}
+
+.lines {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 60px;
+    width: 90%;
+}
+
+.meet__title {
+    color: black;
+    font-weight: bolder;
+}
+
+span {
+    align-self: center;
+    background-color: $aneta-green;
+    height: 5px;
+    margin: 0 10px;
+    width: 380px;    
+}
+
+.footer__logo {
+    width: 50px;
+}
+
+.symbols {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.symbol {
+    margin: 0 15px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 
 
 
-
-// .port__pictures{
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     align-content: space-between;
-// }
-
-// .port__pic{
-//     display: flex;
-//     flex-direction: column;
-//     width: 33%;
-//     max-width: fit-content;
-//     margin: 20px;
-// }
-
-
-// img{
-//     width: 100%;
-// }
 
