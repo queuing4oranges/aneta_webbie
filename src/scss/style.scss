@@ -26,6 +26,35 @@ body {
     width: 100%;
 }
 
+/*HEADER*/
+.header__cont {
+    background-color: $aneta-lightgrey;
+    height: 120px;
+}
+
+
+.links {
+    align-items: center;
+    background: $aneta-darkgrey;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 50px;
+    text-align: center;
+    width: 100%;    
+}
+
+.white {
+    color: $aneta-green;background-color: white;
+    height: 50px;
+   
+}
+
+.nav__green {
+    background-color: $aneta-green;
+    color: black;
+    height: 50px;
+}
 
 /*INTRO*/
 .intro {
@@ -35,9 +64,9 @@ body {
     color: $aneta-white;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 600px;
     margin: 0;
-    padding: 150px;
+    padding: 50px 150px 150px;
     text-align: center;
     width: 100%;
     &__h1{
@@ -328,6 +357,8 @@ img {
 
 .underline {
     text-decoration: underline 5px $aneta-green;
+
+
 }
 
 .contact__btn {
@@ -493,10 +524,10 @@ textarea {
 
 .meet__title {
     color: black;
-    font-weight: bolder;
+    font-weight: 900;
 }
 
-span {
+.meet__title_cont {
     align-self: center;
     background-color: $aneta-green;
     height: 5px;
@@ -524,7 +555,188 @@ span {
     margin-top: 30px;
 }
 
+/*mobile phone*/
+@media (max-width: 600px){
+    /*HEADER*/
+    .header__cont {
+        height: 60px;
+        width: 100%;
+        font-size: 0.7em;
+        align-items: center;
+        justify-content: center;
+    }
+    .white,
+    .nav__green {
+        display: flex;
+        justify-content: center; 
+        align-items: center;      
+    }
+
+    /*INTRO*/
+    .intro {
+        background-size: cover;
+        height: 300px;
+        padding: 25px 75px 75px;
+        &__h1 {
+            font-size: 35px;
+        }
+
+    }
+    .subtitle {
+        font-size: 25px;
+        font-weight: 200;
+    }
+
+    /*PRODUCT*/
+    .product__top-text {
+        font-size: 1em;
+    }
+    .circles {
+        display: none;
+    }
+
+    /*SKILLS*/
+    .skills {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    h2 {
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    .product__cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .black p {
+        font-size: 0.5em;
+    }
+
+    /*MY PORTFOLIO*/
+    .portfolio {
+        margin: 50px 0 0 0;
+        padding: 0 0 50px 0;
+    }
+    .port__pictures {
+        flex-direction: column;
+    }
+
+    .port__pic {
+        width: 80%;
+        margin: auto;
+    }
+
+    /*ABOUT ME*/
+    .about {
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__container {
+        flex-direction: column;
+    }
+
+    .title__about {
+        margin-top: 0px;
+    }
+
+    .text__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .text__cont p {
+        align-self: center;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .about__image {
+        width: 200px;
+    }
+
+    .contact__btn {
+        width: 100px;
+    }
+
+    /*FIND ME HERE*/
+    .logo {
+        width: 50px;
+        margin: 10px;
+    }
+    .social__logo {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+
+
+    }
+
+    /*CONTACT ME*/
+    .form__cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .form__btn {
+        width: 200px;
+        align-self: center;
+    }
+
+    .form__left_right {
+        flex-direction: column;
+    }
+    
+    .form__left, 
+    .form__right {
+        width: 300px;
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    /*NICE TO MEET YOU*/
+
+    .meet__title {
+        font-size: 1rem;
+    
+        
+    }
+
+    .meet__title_cont {
+        width: 80px;
+    }
+
+
+
+    }
 
 
 
 
+
+// /*mobile phone*/
+// @media (max-width: 600px)
+
+// /*big screen*/
+// @media screen and (min-width: 1900px)
